@@ -14,5 +14,7 @@ export const Container = styled.div`
     padding: 20px;
     width: 100%;
     grid-gap: 20px;
+    height: 100%;
+    flex-grow: 1;
   }
 `

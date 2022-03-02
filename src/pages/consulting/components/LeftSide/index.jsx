@@ -1,4 +1,4 @@
-import { Container, Title, Text } from './style';
+import { Container, Title, Text } from './style'
 
 const LeftSide = () => {
   return (
@@ -13,7 +13,7 @@ const LeftSide = () => {
         устанавливают стоимость продукта.
       </Text>
     </Container>
-  );
-};
+  )
+}
 
-export default LeftSide;
+export default LeftSide

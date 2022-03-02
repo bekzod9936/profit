@@ -10,6 +10,7 @@ const RightSide = () => {
   const [open, setOpen] = useConsult()
 
   const handleClick = useCallback(() => setOpen(true), [setOpen])
+
   const { width } = useWindowWidth()
 
   return (
