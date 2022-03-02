@@ -1,13 +1,15 @@
-import Button from 'components/Button';
-import { Container, Title } from './style';
+import Button from 'components/Button'
+import { Container, Title, Wrap } from './style'
 
 const Box = ({ title }) => {
   return (
     <Container>
-      <Title>{title}</Title>
-      <Button height="50px">подробнее</Button>
+      <Wrap>
+        <Title>{title}</Title>
+        <Button height="50px">подробнее</Button>
+      </Wrap>
     </Container>
-  );
-};
+  )
+}
 
-export default Box;
+export default Box
