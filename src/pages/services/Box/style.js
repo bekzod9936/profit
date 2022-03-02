@@ -22,8 +22,10 @@ export const Title = styled.div`
   color: white;
   font-size: 35px;
   margin-bottom: 20px;
-  width: 60%;
-
+  width: 100%;
+  @media (min-width: ${device.desktop}) {
+    width: 60%;
+  }
   @media (max-width: ${device.mobile}) {
     font-size: 25px;
     width: 100%;
