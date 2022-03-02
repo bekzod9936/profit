@@ -1,10 +1,11 @@
-import Consulting from 'pages/consulting';
-import Footer from 'pages/footer';
-import Main from 'pages/main';
-import Services from 'pages/services';
-import Tools from 'pages/tools';
-import Working from 'pages/working';
-import { Container, Body } from './style';
+import { memo } from 'react'
+import Main from 'pages/main'
+import Tools from 'pages/tools'
+import Footer from 'pages/footer'
+import Working from 'pages/working'
+import Services from 'pages/services'
+import { Container, Body } from './style'
+import Consulting from 'pages/consulting'
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
       </Body>
       <Footer />
     </Container>
-  );
-};
+  )
+}
 
-export default App;
+export default memo(App)

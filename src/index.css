@@ -1,3 +1,7 @@
+html {
+  height: -webkit-fill-available !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,10 +15,6 @@
   --planshet: 720px;
   --laptop: 960px;
   --desktop: 1140px;
-}
-
-html {
-  height: -webkit-fill-available !important;
 }
 
 body {

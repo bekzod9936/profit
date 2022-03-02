@@ -5,4 +5,4 @@ export const boxes = [
   { title: 'SMM-продвижение' },
   { title: 'SEO-оптимизация' },
   { title: 'Брендинг и айдентика' },
-];
+]

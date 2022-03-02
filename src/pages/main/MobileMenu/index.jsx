@@ -1,5 +1,5 @@
+import useMenu from './useMenu'
 import NavBar from 'components/NavBar'
-import { useEffect, useRef, useState } from 'react'
 import {
   Container,
   Content,
@@ -10,24 +10,7 @@ import {
 } from './style'
 
 const Menu = () => {
-  const ref = useRef(null)
-  const [open, setOpen] = useState(false)
-  const handleClickOutside = (event) => {
-    if (ref.current && !ref.current.contains(event.target)) {
-      setOpen(false)
-    }
-  }
-
-  useEffect(() => {
-    document.addEventListener('click', handleClickOutside, true)
-    return () => {
-      document.removeEventListener('click', handleClickOutside, true)
-    }
-  }, [])
-
-  const handleClick = () => {
-    setOpen((prev) => !prev)
-  }
+  const { ref, open, handleClick } = useMenu()
 
   return (
     <>

@@ -37,4 +37,13 @@ export const MobileWrap = styled.div`
 `
 export const IconArrow = styled(Arrow)`
   transform: ${({ side }) => side === 'left' && 'rotate(-180deg)'};
+  width: 50px;
+  height: 50px;
+`
+export const WrapIcon = styled.div`
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: ${({ disabled }) => disabled && 'none'};
 `
