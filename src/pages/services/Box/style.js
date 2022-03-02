@@ -22,12 +22,7 @@ export const Title = styled.div`
   color: white;
   font-size: 35px;
   margin-bottom: 20px;
-  width: 50%;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  overflow: hidden;
+  width: 60%;
 
   @media (max-width: ${device.mobile}) {
     font-size: 25px;
