@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const StyleButton = styled.button`
   width: fit-content;
@@ -12,4 +13,8 @@ export const StyleButton = styled.button`
   cursor: pointer;
   border: none;
   text-transform: capitalize;
-`;
+  @media (max-width: ${device.mobile}) {
+    font-size: 18px;
+    height: ${({ height }) => (height ? height : '60px')};
+  }
+`

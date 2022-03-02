@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
@@ -15,9 +16,18 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 50px;
-`;
+  @media (max-width: ${device.mobile}) {
+    padding: 20px;
+  }
+`
 export const Title = styled.div`
   color: white;
   font-size: 35px;
   margin-bottom: 20px;
-`;
+  width: 50%;
+
+  @media (max-width: ${device.mobile}) {
+    font-size: 25px;
+    width: 100%;
+  }
+`
