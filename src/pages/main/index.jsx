@@ -35,7 +35,7 @@ const Header = () => {
           </WrapNav>
         </Head>
         <Body>
-          <LeftSide>
+          <LeftSide data-aos="fade-right" data-aos-duration="2500">
             <Title>Разаработка сайтов и мобильных приложений</Title>
             <Text>
               Помогаем бизнесу увеличить прибыль с помощью digital-инструментов
@@ -48,7 +48,7 @@ const Header = () => {
               <Button width="100%">Обсудить проект</Button>
             </WrapButton>
           </LeftSide>
-          <RightSide>
+          <RightSide data-aos="fade-left" data-aos-duration="2500">
             <Img2 src={phone2} alt="phone2" />
             <Img1 src={phone1} alt="phone1" />
           </RightSide>

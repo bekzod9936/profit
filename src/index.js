@@ -4,6 +4,7 @@ import Context from 'context'
 import { StrictMode } from 'react'
 import { render } from 'react-dom'
 import reportWebVitals from './reportWebVitals'
+import 'aos/dist/aos.css'
 
 render(
   <StrictMode>
