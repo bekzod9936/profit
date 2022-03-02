@@ -1,5 +1,5 @@
-import { Container, Title, Img } from './style';
-import check from 'assets/images/check.png';
+import { Container, Title, Img } from './style'
+import check from 'assets/images/check.png'
 
 const Box = ({ title }) => {
   return (
@@ -7,7 +7,7 @@ const Box = ({ title }) => {
       <Img src={check} />
       <Title>{title}</Title>
     </Container>
-  );
-};
+  )
+}
 
-export default Box;
+export default Box

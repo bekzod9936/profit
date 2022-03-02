@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100vw;
@@ -7,7 +8,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 50px 0;
-`;
+  @media (max-width: ${device.mobile}) {
+    height: fit-content;
+  }
+`
 
 export const Title1 = styled.div`
   color: white;
@@ -15,11 +19,19 @@ export const Title1 = styled.div`
   border-radius: 20px;
   padding: 10px;
   font-size: 50px;
-`;
+  width: 90%;
+  text-align: center;
+  @media (max-width: ${device.mobile}) {
+    font-size: 22px;
+  }
+`
 export const Title2 = styled.div`
   color: white;
   font-size: 50px;
-`;
+  @media (max-width: ${device.mobile}) {
+    font-size: 20px;
+  }
+`
 
 export const Wrapper = styled.div`
   width: 90%;
@@ -29,4 +41,7 @@ export const Wrapper = styled.div`
   grid-gap: 40px;
   padding-top: 50px;
   justify-content: center;
-`;
+  @media (max-width: ${device.mobile}) {
+    grid-template-columns: 100%;
+  }
+`
