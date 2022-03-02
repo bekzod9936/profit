@@ -9,7 +9,6 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 50px;
-  position: relative;
   background-color: #ffffff10;
   min-height: 240px;
   min-width: 330px;
@@ -27,10 +26,4 @@ export const Title = styled.div`
     font-size: 25px;
     width: 100%;
   }
-`
-export const Wrap = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 300;
 `

@@ -1,13 +1,11 @@
 import Button from 'components/Button'
-import { Container, Title, Wrap } from './style'
+import { Container, Title } from './style'
 
 const Box = ({ title }) => {
   return (
     <Container>
-      <Wrap>
-        <Title>{title}</Title>
-        <Button height="50px">подробнее</Button>
-      </Wrap>
+      <Title>{title}</Title>
+      <Button height="50px">подробнее</Button>
     </Container>
   )
 }
