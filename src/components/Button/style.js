@@ -1,7 +1,8 @@
 import { device } from 'utils/style'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const StyleButton = styled.button`
+export const StyleButton = styled(motion.button)`
   border: none;
   color: black;
   font-size: 20px;
@@ -18,3 +19,9 @@ export const StyleButton = styled.button`
     height: ${({ height }) => (height ? height : '60px')};
   }
 `
+
+export const buttonVariants = {
+  hover: {
+    scale: 1.1,
+  },
+}

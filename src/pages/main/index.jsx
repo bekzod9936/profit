@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <Container>
       <Wrapper>
-        <Head>
+        <Head data-aos="fade-left" data-aos-duration="2500">
           <IconLogo />
           <WrapMenu>
             <MobileMenu />
