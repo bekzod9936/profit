@@ -4,10 +4,12 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 70%;
   padding: 40px 40px 40px 100px;
   height: 100%;
+  grid-gap: 50px;
+
   @media (max-width: ${device.mobile}) {
     padding: 20px;
     width: 100%;

@@ -1,16 +1,16 @@
-import { NavBarContext } from 'context/navbar'
-import { useCallback, useContext, useEffect, useRef } from 'react'
+import { useNavBar } from 'context/navbar'
+import { useCallback, useEffect, useRef } from 'react'
 
 const useMenu = () => {
   const ref = useRef(null)
-  const [open, setOpen] = useContext(NavBarContext)
+  const [open, setOpen] = useNavBar()
 
   const handleClickOutside = useCallback(
     (event) => {
       if (
         ref.current &&
         !ref.current.contains(event.target) &&
-        ref.current.innerHTML.indexOf('word') != -1
+        Number(ref.current.innerHTML.indexOf('word')) !== -1
       ) {
         setOpen(false)
       }

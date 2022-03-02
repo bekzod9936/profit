@@ -1,17 +1,38 @@
-import { Container, Title, Text } from './style';
-import Button from 'components/Button';
+import Form from '../Form'
+import Texts from '../Texts'
+import { Container } from './style'
+import { useCallback } from 'react'
+import Button from 'components/Button'
+import { useConsult } from 'context/consult'
+import useWindowWidth from 'utils/hooks/useWindowWidth'
 
 const RightSide = () => {
+  const [open, setOpen] = useConsult()
+
+  const handleClick = useCallback(() => setOpen(true), [setOpen])
+  const { width } = useWindowWidth()
+
   return (
     <Container>
-      <Title>Получить бесплатную консультацию</Title>
-      <Text>
-        В рамках консультации уточним необходимую информацию для анализа вашего
-        проекта
-      </Text>
-      <Button width="100%">Получить</Button>
+      {open ? (
+        <>
+          {width > 540 ? (
+            <Form />
+          ) : (
+            <>
+              <Texts />
+              <Form />
+            </>
+          )}
+        </>
+      ) : (
+        <Texts />
+      )}
+      <Button onClick={handleClick} width="100%">
+        {open ? 'Отправить' : 'Получить'}
+      </Button>
     </Container>
-  );
-};
+  )
+}
 
-export default RightSide;
+export default RightSide

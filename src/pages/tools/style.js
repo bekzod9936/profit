@@ -19,10 +19,10 @@ export const Title1 = styled.div`
   border-radius: 20px;
   padding: 10px;
   font-size: 50px;
-  width: 90%;
   text-align: center;
   @media (max-width: ${device.mobile}) {
     font-size: 22px;
+    width: 90%;
   }
 `
 export const Title2 = styled.div`

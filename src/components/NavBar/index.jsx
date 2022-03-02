@@ -1,10 +1,10 @@
 import { list } from './constants'
 import { Container } from './style'
-import { NavBarContext } from 'context/navbar'
-import { useCallback, useContext } from 'react'
+import { useCallback } from 'react'
+import { useNavBar } from 'context/navbar'
 
 const NavBar = ({ color }) => {
-  const [, setOpen] = useContext(NavBarContext)
+  const [, setOpen] = useNavBar()
   const handleClick = useCallback(() => setOpen(false), [setOpen])
 
   return (
