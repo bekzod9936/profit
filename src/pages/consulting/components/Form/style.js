@@ -5,7 +5,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   grid-gap: 20px;
+  padding-bottom: 20px;
   @media (max-width: ${device.mobile}) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 `
