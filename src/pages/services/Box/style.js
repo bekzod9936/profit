@@ -23,6 +23,9 @@ export const Title = styled.div`
   font-size: 35px;
   margin-bottom: 20px;
   width: 50%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
 
   @media (max-width: ${device.mobile}) {
     font-size: 25px;
