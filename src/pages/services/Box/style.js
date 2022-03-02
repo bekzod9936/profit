@@ -11,7 +11,8 @@ export const Container = styled.div`
   padding: 50px;
   position: relative;
   background-color: #ffffff10;
-
+  min-height: 240px;
+  min-width: 330px;
   @media (max-width: ${device.mobile}) {
     padding: 20px;
   }
