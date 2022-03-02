@@ -1,7 +1,7 @@
-import { Container } from './style';
+import { Container } from './style'
 
-const Title = ({ children }) => {
-  return <Container>{children}</Container>;
-};
+const Title = ({ children, ...props }) => {
+  return <Container {...props}>{children}</Container>
+}
 
-export default Title;
+export default Title
