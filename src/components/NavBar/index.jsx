@@ -1,14 +1,14 @@
-import { list } from './constants';
-import { Container } from './style';
+import { list } from './constants'
+import { Container } from './style'
 
-const NavBar = () => {
+const NavBar = ({ color }) => {
   return (
-    <Container>
+    <Container color={color}>
       {list.map(({ link, title }) => {
-        return <a href={`#${link}`}>{title}</a>;
+        return <a href={`#${link}`}>{title}</a>
       })}
     </Container>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

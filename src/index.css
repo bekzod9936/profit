@@ -12,3 +12,20 @@
   --laptop: 960px;
   --desktop: 1140px;
 }
+
+html {
+  height: -webkit-fill-available !important;
+}
+
+body {
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: white;
+  min-height: 100vh !important;
+  min-height: -webkit-fill-available !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,3 +1,4 @@
+import MobileMenu from './MobileMenu'
 import Button from 'components/Button'
 import NavBar from 'components/NavBar'
 import phone1 from 'assets/images/phone1.png'
@@ -14,6 +15,10 @@ import {
   RightSide,
   Img1,
   Img2,
+  WrapNav,
+  WrapMenu,
+  WrapButton,
+  MobileImages,
 } from './style'
 
 const Header = () => {
@@ -22,7 +27,12 @@ const Header = () => {
       <Wrapper>
         <Head>
           <IconLogo />
-          <NavBar />
+          <WrapMenu>
+            <MobileMenu />
+          </WrapMenu>
+          <WrapNav>
+            <NavBar />
+          </WrapNav>
         </Head>
         <Body>
           <LeftSide>
@@ -30,7 +40,13 @@ const Header = () => {
             <Text>
               Помогаем бизнесу увеличить прибыль с помощью digital-инструментов
             </Text>
-            <Button>Обсудить проект</Button>
+            <MobileImages>
+              <Img2 src={phone2} alt="phone2" />
+              <Img1 src={phone1} alt="phone1" />
+            </MobileImages>
+            <WrapButton>
+              <Button width="100%">Обсудить проект</Button>
+            </WrapButton>
           </LeftSide>
           <RightSide>
             <Img2 src={phone2} alt="phone2" />

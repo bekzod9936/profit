@@ -1,3 +1,4 @@
+import { device } from 'utils/style'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -7,4 +8,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
+  @media (max-width: ${device.mobile}) {
+    font-size: 30px;
+  }
 `
