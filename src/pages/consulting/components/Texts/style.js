@@ -1,7 +1,9 @@
 import { device } from 'utils/style'
 import styled from 'styled-components'
 
-export const Container = styled.div``
+export const Container = styled.div`
+  padding-bottom: 20px;
+`
 
 export const Title = styled.div`
   color: white;
