@@ -20,6 +20,8 @@ export const Title1 = styled.div`
   padding: 10px;
   font-size: 50px;
   text-align: center;
+  font-family: 'GilroyBold' !important;
+
   @media (max-width: ${device.mobile}) {
     font-size: 22px;
     width: 90%;
@@ -28,6 +30,8 @@ export const Title1 = styled.div`
 export const Title2 = styled.div`
   color: white;
   font-size: 50px;
+  font-family: 'GilroyBold' !important;
+
   @media (max-width: ${device.mobile}) {
     font-size: 20px;
   }

@@ -8,6 +8,7 @@ export const Container = styled.div`
   font-size: 50px;
   word-break: break-word;
   justify-content: center;
+  font-family: 'GilroyBold' !important;
   @media (max-width: ${device.mobile}) {
     font-size: 30px;
   }

@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'GilroyLight';
+  src: local('GilroyLight'),
+    url('utils/fonts/GilroyLight.otf') format('truetype');
+}
+@font-face {
+  font-family: 'GilroyBold';
+  src: local('GilroyBold'), url('utils/fonts/GilroyBold.otf') format('truetype');
+}
+
 html {
   height: -webkit-fill-available !important;
 }
@@ -7,6 +17,7 @@ html {
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'GilroyLight';
 }
 
 :root {

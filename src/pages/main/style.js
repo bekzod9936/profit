@@ -65,7 +65,7 @@ export const Title = styled.div`
   color: white;
   font-size: 60px;
   word-break: break-word;
-  font-weight: bolder;
+  font-family: 'GilroyBold' !important;
   @media (max-width: ${device.mobile}) {
     font-size: 24px;
     margin-top: 30px;

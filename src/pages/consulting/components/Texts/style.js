@@ -9,6 +9,8 @@ export const Title = styled.div`
   color: white;
   width: 100%;
   font-size: 35px;
+  font-family: 'GilroyBold' !important;
+
   @media (max-width: ${device.mobile}) {
     font-size: 25px;
   }

@@ -21,6 +21,8 @@ export const Container = styled.div`
 export const Title = styled.div`
   color: white;
   font-size: 50px;
+  font-family: 'GilroyBold' !important;
+
   @media (max-width: ${device.mobile}) {
     font-size: 30px;
   }

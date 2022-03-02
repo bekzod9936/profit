@@ -7,6 +7,7 @@ export const StyleButton = styled(motion.button)`
   color: black;
   font-size: 20px;
   cursor: pointer;
+  white-space: nowrap;
   border-radius: 80px;
   width: fit-content;
   background-color: white;
