@@ -3,17 +3,19 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  border-bottom-right-radius: 130px;
+  border-bottom-right-radius: 30% 40%;
   border: 1px solid #61656b;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 50px;
   background-color: #ffffff10;
-  min-height: 240px;
-  min-width: 330px;
   @media (max-width: ${device.mobile}) {
     padding: 20px;
+  }
+  @media (min-width: ${device.planshet}) {
+    min-height: 240px;
+    min-width: 330px;
   }
 `
 export const Title = styled.div`
