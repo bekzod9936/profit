@@ -57,6 +57,8 @@ export const Wrapper = styled.div`
   border: 1px solid white;
   margin-top: 50px;
   align-items: center;
+  background-color: #ffffff10;
+
   @media (max-width: ${device.mobile}) {
     grid-template-columns: 100%;
     padding: 15px;

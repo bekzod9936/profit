@@ -10,6 +10,8 @@ export const Container = styled.div`
   justify-content: space-between;
   padding: 50px;
   position: relative;
+  background-color: #ffffff10;
+
   @media (max-width: ${device.mobile}) {
     padding: 20px;
   }
