@@ -27,6 +27,7 @@ export const Title = styled.div`
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
   display: -webkit-box;
+  overflow: hidden;
 
   @media (max-width: ${device.mobile}) {
     font-size: 25px;
