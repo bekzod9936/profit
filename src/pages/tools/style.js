@@ -1,5 +1,5 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
+import { device } from 'utils/style';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
@@ -11,31 +11,35 @@ export const Container = styled.div`
   @media (max-width: ${device.mobile}) {
     height: fit-content;
   }
-`
+`;
 
-export const Title1 = styled.div`
+const common = css`
   color: white;
-  background-color: black;
-  border-radius: 20px;
-  padding: 10px;
   font-size: 50px;
   text-align: center;
   font-family: 'GilroyBold' !important;
 
+  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
+    font-size: 35px;
+  }
   @media (max-width: ${device.mobile}) {
     font-size: 22px;
-    width: 90%;
   }
-`
-export const Title2 = styled.div`
-  color: white;
-  font-size: 50px;
-  font-family: 'GilroyBold' !important;
+`;
+
+export const Title1 = styled.div`
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px 20px;
+  ${common}
 
   @media (max-width: ${device.mobile}) {
-    font-size: 20px;
+    width: 90%;
   }
-`
+`;
+export const Title2 = styled.div`
+  ${common}
+`;
 
 export const Wrapper = styled.div`
   width: 90%;
@@ -45,7 +49,11 @@ export const Wrapper = styled.div`
   grid-gap: 40px;
   padding-top: 50px;
   justify-content: center;
+  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
+    grid-template-columns: 40% 40%;
+    grid-gap: 25px;
+  }
   @media (max-width: ${device.mobile}) {
     grid-template-columns: 100%;
   }
-`
+`;

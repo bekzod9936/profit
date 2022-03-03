@@ -1,6 +1,6 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import { device } from 'utils/style';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
   border: 1px solid #6e59b6;
@@ -15,18 +15,21 @@ export const Container = styled(motion.div)`
     max-height: 230px;
     min-height: 230px;
   }
-`
+`;
 
 export const Title = styled.div`
   color: white;
   font-size: 35px;
   max-width: 80%;
   text-align: center;
+  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
+    font-size: 30px;
+  }
   @media (max-width: ${device.mobile}) {
     max-width: 100%;
     font-size: 25px;
   }
-`
+`;
 export const Img = styled.img`
   position: absolute;
   left: 0;
@@ -35,9 +38,9 @@ export const Img = styled.img`
     width: 50px;
     height: 50px;
   }
-`
+`;
 export const containerVariants = {
   hover: {
     scale: 1.05,
   },
-}
+};
