@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { device } from 'utils/style';
+import styled from 'styled-components'
+import { device } from 'utils/style'
 
 export const Container = styled.div`
   width: 30%;
@@ -22,4 +22,8 @@ export const Container = styled.div`
     height: 100%;
     flex-grow: 1;
   }
-`;
+`
+
+export const WrapButton = styled.div`
+  margin-top: 50px;
+`

@@ -1,19 +1,11 @@
-import { device } from 'utils/style';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Container = styled(motion.div)`
   display: flex;
   flex-direction: column;
   grid-gap: 20px;
-  padding-bottom: 20px;
-  @media (max-width: ${device.mobile}) {
-    padding-bottom: 50px;
-  }
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    padding-bottom: 50px;
-  }
-`;
+`
 export const containerVariants = {
   hidden: {
     opacity: 0,
@@ -26,4 +18,4 @@ export const containerVariants = {
     x: '-100vh',
     transition: { ease: 'easeInOut' },
   },
-};
+}

@@ -1,6 +1,6 @@
 import Form from '../Form'
 import Texts from '../Texts'
-import { Container } from './style'
+import { Container, WrapButton } from './style'
 import { useCallback, useState } from 'react'
 import Button from 'components/Button'
 import { useConsult } from 'context/consult'
@@ -42,9 +42,11 @@ const RightSide = () => {
       ) : (
         <Texts />
       )}
-      <Button onClick={handleClick} width="100%">
-        {open ? 'Отправить' : 'Получить'}
-      </Button>
+      <WrapButton>
+        <Button onClick={handleClick} width="100%">
+          {open ? 'Отправить' : 'Получить'}
+        </Button>
+      </WrapButton>
     </Container>
   )
 }
