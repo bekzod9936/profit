@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 20px 60px;
+  grid-gap: 60px;
   padding-top: 20px;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     grid-gap: 25px;
