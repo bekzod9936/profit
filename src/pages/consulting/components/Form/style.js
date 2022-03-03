@@ -14,8 +14,4 @@ export const containerVariants = {
     opacity: 1,
     transition: { delay: 0, duration: 1.5 },
   },
-  exit: {
-    x: '-100vh',
-    transition: { ease: 'easeInOut' },
-  },
 }

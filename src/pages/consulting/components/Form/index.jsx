@@ -7,7 +7,7 @@ const Form = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      exit="exit"
+      exit="hidden"
     >
       <Input placeholder="Ваше имя" />
       <Input placeholder="номер телефона" />

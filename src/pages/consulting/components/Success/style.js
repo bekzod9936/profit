@@ -1,8 +1,9 @@
 import { device } from 'utils/style'
 import styled from 'styled-components'
 import { ReactComponent as Success } from 'assets/icons/success.svg'
+import { motion } from 'framer-motion'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   display: flex;
   flex-grow: 1;
   height: 100%;
@@ -32,3 +33,13 @@ export const Text = styled.div`
 `
 
 export const IconSuccess = styled(Success)``
+
+export const containerVariants = {
+  hidden: {
+    x: '100vw',
+  },
+  visible: {
+    x: 0,
+    transition: { type: 'spring' },
+  },
+}
