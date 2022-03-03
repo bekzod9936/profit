@@ -4,7 +4,7 @@ import { device } from 'utils/style';
 export const Container = styled.div`
   width: 30%;
   padding: 30px;
-  height: inherit;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
