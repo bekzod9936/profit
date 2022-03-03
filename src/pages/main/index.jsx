@@ -37,9 +37,7 @@ const Header = () => {
           </Head>
         ) : (
           <Head>
-            <div data-aos="fade-left" data-aos-duration="2500">
-              <IconLogo />
-            </div>
+            <IconLogo />
             <WrapMenu>
               <MobileMenu />
             </WrapMenu>
