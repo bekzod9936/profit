@@ -43,7 +43,11 @@ const RightSide = () => {
         <Texts />
       )}
       <WrapButton>
-        <Button onClick={handleClick} width="100%">
+        <Button
+          color={successOpen && '#219653'}
+          onClick={handleClick}
+          width="100%"
+        >
           {open ? 'Отправить' : 'Получить'}
         </Button>
       </WrapButton>
