@@ -10,6 +10,7 @@ export const Container = styled.div`
   justify-content: space-between;
   background-color: black;
   border-radius: inherit;
+  border: 2px solid #565656;
   @media (max-width: ${device.mobile}) {
     padding: 20px;
     width: 100%;

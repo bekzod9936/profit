@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
   width: 90%;
   flex-grow: 1;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 90px;
   padding-top: 50px;
   @media (max-width: ${device.mobile}) {

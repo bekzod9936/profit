@@ -58,6 +58,8 @@ export const Wrapper = styled.div`
   margin-top: 50px;
   align-items: center;
   background-color: #ffffff10;
+  box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
+    -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
 
   @media (max-width: ${device.mobile}) {
     grid-template-columns: 100%;

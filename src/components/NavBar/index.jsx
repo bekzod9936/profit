@@ -1,7 +1,8 @@
 import { list } from './constants'
-import { Container } from './style'
+import { Container, linkVariants } from './style'
 import { useCallback } from 'react'
 import { useNavBar } from 'context/navbar'
+import { motion } from 'framer-motion'
 
 const NavBar = ({ color }) => {
   const [, setOpen] = useNavBar()
@@ -11,9 +12,15 @@ const NavBar = ({ color }) => {
     <Container color={color}>
       {list.map(({ link, title }) => {
         return (
-          <a href={`#${link}`} onClick={handleClick} key={link}>
+          <motion.a
+            variants={linkVariants}
+            whileHover="hover"
+            href={`#${link}`}
+            onClick={handleClick}
+            key={link}
+          >
             {title}
-          </a>
+          </motion.a>
         )
       })}
     </Container>

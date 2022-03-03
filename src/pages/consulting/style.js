@@ -21,6 +21,8 @@ export const Wrapper = styled.div`
   border-radius: 30px;
   border: 1px solid white;
   align-items: center;
+  box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
+    -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
   @media (max-width: ${device.mobile}) {
     flex-direction: column;
   }

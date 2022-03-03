@@ -1,15 +1,22 @@
 import Form from '../Form'
 import Texts from '../Texts'
 import { Container } from './style'
-import { useCallback } from 'react'
+import { useCallback, useState } from 'react'
 import Button from 'components/Button'
 import { useConsult } from 'context/consult'
 import useWindowWidth from 'utils/hooks/useWindowWidth'
+import Success from '../Success'
 
 const RightSide = () => {
   const [open, setOpen] = useConsult()
+  const [successOpen, setSuccessOpen] = useState(false)
 
-  const handleClick = useCallback(() => setOpen(true), [setOpen])
+  const handleClick = useCallback(() => {
+    setOpen(true)
+    if (open) {
+      setSuccessOpen(true)
+    }
+  }, [setOpen, open])
 
   const { width } = useWindowWidth()
 
@@ -18,7 +25,13 @@ const RightSide = () => {
       {open ? (
         <>
           {width > 540 ? (
-            <Form />
+            successOpen ? (
+              <Success />
+            ) : (
+              <Form />
+            )
+          ) : successOpen ? (
+            <Success />
           ) : (
             <>
               <Texts />

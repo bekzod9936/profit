@@ -22,3 +22,8 @@ export const Container = styled.div`
     }
   }
 `
+export const linkVariants = {
+  hover: {
+    scale: 1.1,
+  },
+}

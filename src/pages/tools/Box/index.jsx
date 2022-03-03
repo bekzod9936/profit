@@ -1,9 +1,9 @@
-import { Container, Title, Img } from './style'
+import { Container, Title, Img, containerVariants } from './style'
 import check from 'assets/images/check.png'
 
 const Box = ({ title }) => {
   return (
-    <Container>
+    <Container variants={containerVariants} whileHover="hover">
       <Img src={check} />
       <Title>{title}</Title>
     </Container>

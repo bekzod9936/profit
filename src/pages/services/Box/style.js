@@ -1,12 +1,15 @@
 import { device } from 'utils/style'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   width: 100%;
   border-bottom-right-radius: 30% 40%;
   border: 1px solid #61656b;
   display: flex;
   flex-direction: column;
+  box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
+    -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
   justify-content: space-between;
   padding: 50px;
   background-color: #ffffff10;
@@ -31,3 +34,8 @@ export const Title = styled.div`
     width: 100%;
   }
 `
+export const containerVariants = {
+  hover: {
+    scale: 1.05,
+  },
+}

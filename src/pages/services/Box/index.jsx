@@ -1,9 +1,9 @@
 import Button from 'components/Button'
-import { Container, Title } from './style'
+import { Container, Title, containerVariants } from './style'
 
 const Box = ({ title }) => {
   return (
-    <Container>
+    <Container variants={containerVariants} whileHover="hover">
       <Title>{title}</Title>
       <Button height="50px">подробнее</Button>
     </Container>

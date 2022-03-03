@@ -24,5 +24,8 @@ export const StyleButton = styled(motion.button)`
 export const buttonVariants = {
   hover: {
     scale: 1.1,
+    transition: {
+      yoyo: Infinity,
+    },
   },
 }

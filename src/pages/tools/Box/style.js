@@ -1,13 +1,15 @@
 import { device } from 'utils/style'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   border: 1px solid #6e59b6;
   border-radius: 30px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.1), -3px -3px 18px 0 black;
   @media (max-width: ${device.mobile}) {
     height: 230px;
     max-height: 230px;
@@ -34,3 +36,8 @@ export const Img = styled.img`
     height: 50px;
   }
 `
+export const containerVariants = {
+  hover: {
+    scale: 1.05,
+  },
+}
