@@ -1,5 +1,5 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
+import { device } from 'utils/style';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 50%;
@@ -12,6 +12,7 @@ export const Container = styled.div`
     cursor: pointer;
     color: ${({ color }) => (color ? color : 'white')};
   }
+
   @media (max-width: ${device.mobile}) {
     width: 100%;
     flex-direction: column;
@@ -21,9 +22,13 @@ export const Container = styled.div`
       margin-bottom: 25px;
     }
   }
-`
+  @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
+    width: 60%;
+    gap: 10px;
+  }
+`;
 export const linkVariants = {
   hover: {
     scale: 1.1,
   },
-}
+};
