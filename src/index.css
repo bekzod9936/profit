@@ -22,10 +22,6 @@ html {
 
 :root {
   --blue: #4b2cb1;
-  --mobile: 540px;
-  --planshet: 720px;
-  --laptop: 960px;
-  --desktop: 1140px;
 }
 
 body {
