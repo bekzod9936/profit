@@ -20,20 +20,31 @@ import {
   WrapButton,
   MobileImages,
 } from './style'
+import useWindowWidth from 'utils/hooks/useWindowWidth'
 
 const Header = () => {
+  const { width } = useWindowWidth()
+
   return (
     <Container>
       <Wrapper>
-        <Head data-aos="fade-left" data-aos-duration="2500">
-          <IconLogo />
-          <WrapMenu>
-            <MobileMenu />
-          </WrapMenu>
-          <WrapNav>
-            <NavBar />
-          </WrapNav>
-        </Head>
+        {width > 540 ? (
+          <Head data-aos="fade-left" data-aos-duration="2500">
+            <IconLogo />
+            <WrapNav>
+              <NavBar />
+            </WrapNav>
+          </Head>
+        ) : (
+          <Head>
+            <div data-aos="fade-left" data-aos-duration="2500">
+              <IconLogo />
+            </div>
+            <WrapMenu>
+              <MobileMenu />
+            </WrapMenu>
+          </Head>
+        )}
         <Body>
           <LeftSide data-aos="fade-right" data-aos-duration="2500">
             <Title>Разаработка сайтов и мобильных приложений</Title>

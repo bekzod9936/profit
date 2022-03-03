@@ -39,7 +39,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 0;
+  padding: 30px 0;
   @media (max-width: ${device.mobile}) {
     height: fit-content;
     padding: 50px 0;
