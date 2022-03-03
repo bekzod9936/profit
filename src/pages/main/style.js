@@ -31,6 +31,8 @@ export const WrapNav = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
+
   @media (max-width: ${device.mobile}) {
     display: none;
   }
@@ -47,7 +49,7 @@ export const WrapMenu = styled.div`
 
 export const Wrapper = styled.div`
   width: 90%;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   flex-direction: column;
   display: flex;
@@ -129,6 +131,7 @@ export const Head = styled.div`
   justify-content: center;
   position: relative;
 `;
+
 const imgsize = css`
   position: absolute;
   height: 70%;
