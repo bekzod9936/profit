@@ -7,8 +7,10 @@ export const Container = styled.div`
 
 export const Title = styled.div`
   color: white;
-  font-size: 35px;
-  padding-left: 50px;
+  font-size: 30px;
+  padding-left: 45px;
+  line-height: 40px;
+  font-weight: 600;
   width: 80%;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     padding-left: 20px;

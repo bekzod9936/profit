@@ -4,24 +4,20 @@ import { ReactComponent as Arrow } from 'assets/icons/arrow.svg';
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
-  @media (max-width: ${device.mobile}) {
-    height: fit-content;
-  }
+  padding: 56px 0 71px;
 `;
 
 export const Wrapper = styled.div`
   width: 90%;
-  flex-grow: 1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 60px;
-  padding-top: 20px;
+  grid-gap: 95px;
+  margin-top: 58px;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     grid-gap: 25px;
     grid-template-rows: 1fr 1fr 1fr;

@@ -11,8 +11,11 @@ export const Container = styled(motion.div)`
   box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
     -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
   justify-content: space-between;
-  padding: 50px;
-  background-color: #ffffff10;
+  padding: 40px;
+  height: 240px;
+  backdrop-filter: blur(120px);
+  -webkit-backdrop-filter: blur(120px);
+  background: rgba(255, 255, 255, 0.1);
   @media (max-width: ${device.mobile}) {
     padding: 20px;
   }
@@ -25,14 +28,13 @@ export const Container = styled(motion.div)`
     min-width: 330px;
   }
 `;
+
 export const Title = styled.div`
   color: white;
   font-size: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 100%;
-  @media (min-width: ${device.desktop}) {
-    width: 60%;
-  }
+  font-weight: 600;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     font-size: 30px;
   }
@@ -41,6 +43,7 @@ export const Title = styled.div`
     width: 100%;
   }
 `;
+
 export const containerVariants = {
   hover: {
     scale: 1.05,

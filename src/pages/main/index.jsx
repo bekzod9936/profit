@@ -1,8 +1,8 @@
-import MobileMenu from './MobileMenu'
-import Button from 'components/Button'
-import NavBar from 'components/NavBar'
-import phone1 from 'assets/images/phone1.png'
-import phone2 from 'assets/images/phone2.png'
+import MobileMenu from './MobileMenu';
+import Button from 'components/Button';
+import NavBar from 'components/NavBar';
+import phone1 from 'assets/images/phone1.png';
+import phone2 from 'assets/images/phone2.png';
 import {
   Container,
   Wrapper,
@@ -19,11 +19,12 @@ import {
   WrapMenu,
   WrapButton,
   MobileImages,
-} from './style'
-import useWindowWidth from 'utils/hooks/useWindowWidth'
+  WrapTexts,
+} from './style';
+import useWindowWidth from 'utils/hooks/useWindowWidth';
 
 const Header = () => {
-  const { width } = useWindowWidth()
+  const { width } = useWindowWidth();
 
   return (
     <Container>
@@ -45,10 +46,12 @@ const Header = () => {
         )}
         <Body>
           <LeftSide data-aos="fade-right" data-aos-duration="2500">
-            <Title>Разаработка сайтов и мобильных приложений</Title>
-            <Text>
-              Помогаем бизнесу увеличить прибыль с помощью digital-инструментов
-            </Text>
+            <Title>Разаработка сайтов</Title>
+            <Title>и мобильных приложений</Title>
+            <WrapTexts>
+              <Text>Помогаем бизнесу увеличить прибыль</Text>
+              <Text>с помощью digital-инструментов</Text>
+            </WrapTexts>
             <MobileImages>
               <Img2 src={phone2} alt="phone2" />
               <Img1 src={phone1} alt="phone1" />
@@ -64,7 +67,7 @@ const Header = () => {
         </Body>
       </Wrapper>
     </Container>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

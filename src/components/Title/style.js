@@ -1,5 +1,5 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
+import { device } from 'utils/style';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
@@ -9,7 +9,9 @@ export const Container = styled.div`
   word-break: break-word;
   justify-content: center;
   font-family: 'GilroyBold' !important;
+  font-weight: 800;
+  line-height: 68px;
   @media (max-width: ${device.mobile}) {
     font-size: 30px;
   }
-`
+`;

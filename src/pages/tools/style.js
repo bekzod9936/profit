@@ -3,14 +3,11 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
-  @media (max-width: ${device.mobile}) {
-    height: fit-content;
-  }
+  margin: 70px 0 50px;
 `;
 
 const common = css`
@@ -18,7 +15,8 @@ const common = css`
   font-size: 50px;
   text-align: center;
   font-family: 'GilroyBold' !important;
-
+  font-weight: 800;
+  line-height: 60px;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     font-size: 35px;
   }
@@ -43,11 +41,11 @@ export const Title2 = styled.div`
 
 export const Wrapper = styled.div`
   width: 90%;
-  flex-grow: 1;
   display: grid;
-  grid-template-columns: 25% 25% 25%;
-  grid-gap: 40px;
-  padding-top: 50px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 163px 163px;
+  grid-gap: 30px 35px;
+  padding-top: 64px;
   justify-content: center;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     grid-template-columns: 40% 40%;

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { device } from 'utils/style'
+import styled from 'styled-components';
+import { device } from 'utils/style';
 
 export const Container = styled.div`
   width: 30%;
@@ -12,6 +12,7 @@ export const Container = styled.div`
   border-radius: inherit;
   border: 2px solid #565656;
   flex-shrink: 1;
+  min-width: 400px;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     width: 100%;
   }
@@ -22,8 +23,8 @@ export const Container = styled.div`
     height: 100%;
     flex-grow: 1;
   }
-`
+`;
 
 export const WrapButton = styled.div`
   margin-top: 50px;
-`
+`;

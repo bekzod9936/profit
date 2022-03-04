@@ -1,4 +1,4 @@
-import { StyleButton, buttonVariants } from './style'
+import { StyleButton, buttonVariants } from './style';
 
 const Button = ({ children, height, padding, width, onClick, color }) => {
   return (
@@ -13,7 +13,7 @@ const Button = ({ children, height, padding, width, onClick, color }) => {
     >
       {children}
     </StyleButton>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

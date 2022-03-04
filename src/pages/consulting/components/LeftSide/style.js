@@ -5,8 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 70%;
-  padding: 40px 40px 40px 100px;
+  padding: 35px 33px 69px 109px;
   height: 100%;
   grid-gap: 50px;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
@@ -25,6 +24,7 @@ export const Container = styled.div`
 export const Title = styled.div`
   color: white;
   font-size: 50px;
+  font-weight: 800;
   font-family: 'GilroyBold' !important;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     font-size: 40px;
@@ -37,6 +37,7 @@ export const Title = styled.div`
 export const Text = styled.div`
   color: white;
   font-size: 30px;
+  font-weight: 600;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     font-size: 25px;
   }
