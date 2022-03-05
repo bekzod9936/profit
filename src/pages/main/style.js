@@ -27,10 +27,10 @@ export const Container = styled.div`
 `
 
 export const WrapMenu = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
   @media (min-width: ${device.mobile}) {
     display: none;
@@ -40,16 +40,16 @@ export const WrapMenu = styled.div`
 export const Wrapper = styled.div`
   width: 90%;
   height: 100%;
-  justify-content: center;
-  flex-direction: column;
   display: flex;
-  max-width: 1140px;
+  flex-direction: column;
+  justify-content: center;
+  max-width: ${device.desktop};
 `
 
 export const IconLogo = styled(Logo)`
-  position: absolute;
   top: 0;
   left: 0;
+  position: absolute;
   @media (max-width: ${device.mobile}) {
     left: auto;
   }
@@ -58,28 +58,24 @@ export const IconLogo = styled(Logo)`
 export const Title = styled.div`
   color: white;
   font-size: 60px;
-  word-break: break-word;
-  font-family: 'GilroyBold' !important;
   line-height: 68px;
   white-space: nowrap;
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
+  word-break: break-word;
+  font-family: 'GilroyBold' !important;
+  @media (max-width: ${device.laptop}) {
     font-size: 40px;
-  }
-
-  @media (max-width: ${device.mobile}) {
-    font-size: 24px;
-    margin-top: 30px;
+    line-height: 45px;
   }
 `
 
 export const Text = styled.div`
+  width: 70%;
   color: white;
   font-size: 24px;
   line-height: 27px;
-  word-break: break-word;
-  width: 70%;
   white-space: nowrap;
-
+  word-break: break-word;
+  font-weight: 600;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     font-size: 18px;
   }
@@ -90,19 +86,19 @@ export const Text = styled.div`
 `
 
 export const Body = styled.div`
+  width: 100%;
   flex-grow: 1;
   display: flex;
-  width: 100%;
   @media (max-width: ${device.mobile}) {
     flex-direction: column;
   }
 `
 
 export const LeftSide = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 60%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 
   @media (max-width: ${device.mobile}) {
@@ -113,9 +109,10 @@ export const LeftSide = styled.div`
 `
 
 export const RightSide = styled.div`
-  position: relative;
   width: 40%;
-
+  display: flex;
+  position: relative;
+  align-items: center;
   @media (max-width: ${device.mobile}) {
     display: none;
   }
@@ -125,17 +122,17 @@ export const Head = styled.div`
   width: 100%;
   height: 124px;
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
-  position: relative;
 `
 
 export const WrapNav = styled.div`
   width: 100%;
+  height: 124px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 124px;
 
   @media (max-width: ${device.mobile}) {
     display: none;
@@ -143,39 +140,46 @@ export const WrapNav = styled.div`
 `
 
 const imgsize = css`
-  position: absolute;
-  height: 70%;
   top: auto;
+  height: 70%;
+  position: absolute;
   @media (max-width: ${device.mobile}) {
     max-width: 150px;
     max-height: 320px;
+    min-width: 150px;
+    min-height: 320px;
   }
   @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
     max-width: 170px;
     max-height: 360px;
+    min-width: 170px;
+    min-height: 360px;
   }
   max-width: 230px;
   max-height: 500px;
+  min-width: 230px;
+  min-height: 500px;
 `
 
 export const Img1 = styled.img`
   right: 35%;
   ${imgsize}
+  
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    transform: rotate(23deg);
-    right: 15%;
     top: 0;
+    right: 15%;
+    transform: rotate(23deg);
   }
   @media (max-width: ${device.mobile}) {
     left: 24%;
   }
 `
 export const Img2 = styled.img`
-  right: 0;
+  right: -5%;
   ${imgsize}
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    transform: rotate(30deg);
     right: -40%;
+    transform: rotate(30deg);
   }
   @media (max-width: ${device.mobile}) {
     right: 24%;
@@ -203,5 +207,5 @@ export const MobileImages = styled.div`
 `
 
 export const WrapTexts = styled.div`
-  margin-top: 30px;
+  margin-top: 40px;
 `

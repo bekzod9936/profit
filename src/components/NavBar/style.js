@@ -2,13 +2,14 @@ import { device } from 'utils/style'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  gap: 94px;
+  gap: 90px;
   width: 50%;
   display: flex;
   a {
     cursor: pointer;
-    color: ${({ color }) => (color ? color : 'white')};
+    font-weight: 400;
     white-space: nowrap;
+    color: ${({ color }) => (color ? color : 'white')};
   }
 
   @media (max-width: ${device.mobile}) {
@@ -19,9 +20,11 @@ export const Container = styled.div`
       margin-bottom: 25px;
     }
   }
-  @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
-    width: 60%;
-    gap: 27px;
+  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+    gap: 50px;
+  }
+  @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
+    gap: 70px;
   }
 `
 
