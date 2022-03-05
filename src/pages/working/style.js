@@ -53,7 +53,6 @@ export const Wrapper = styled.div`
   width: 90%;
   display: grid;
   flex-grow: 1;
-  max-width: ${device.desktop};
   grid-gap: 72px 120px;
   padding: 50px;
   border-radius: 30px;
@@ -67,6 +66,7 @@ export const Wrapper = styled.div`
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
     -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
+  max-width: 1230px;
   @media (max-width: ${device.mobile}) {
     grid-template-columns: 100%;
     padding: 15px;

@@ -5,10 +5,12 @@ export const Container = styled.div`
   gap: 90px;
   width: 50%;
   display: flex;
+  justify-content: center;
   a {
     cursor: pointer;
     font-weight: 400;
     white-space: nowrap;
+    text-align: center;
     color: ${({ color }) => (color ? color : 'white')};
   }
 

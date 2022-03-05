@@ -16,7 +16,6 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  max-width: ${device.desktop};
   @media (max-width: ${device.mobile}) {
     padding: 30px 0;
     height: fit-content;

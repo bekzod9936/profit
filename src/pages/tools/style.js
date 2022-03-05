@@ -42,7 +42,6 @@ export const Title2 = styled.div`
 export const Wrapper = styled.div`
   width: 90%;
   display: grid;
-  max-width: ${device.desktop};
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 163px 163px;
   grid-gap: 30px 35px;

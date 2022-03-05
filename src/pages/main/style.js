@@ -43,7 +43,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: ${device.desktop};
 `
 
 export const IconLogo = styled(Logo)`
@@ -152,13 +151,7 @@ const imgsize = css`
   @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
     max-width: 170px;
     max-height: 360px;
-    min-width: 170px;
-    min-height: 360px;
   }
-  max-width: 230px;
-  max-height: 500px;
-  min-width: 230px;
-  min-height: 500px;
 `
 
 export const Img1 = styled.img`
