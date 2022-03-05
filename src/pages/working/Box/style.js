@@ -1,9 +1,10 @@
-import { device } from 'utils/style';
-import styled from 'styled-components';
+import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-`;
+  align-items: center;
+`
 
 export const Title = styled.div`
   color: white;
@@ -11,16 +12,21 @@ export const Title = styled.div`
   padding-left: 45px;
   line-height: 40px;
   font-weight: 600;
-  width: 80%;
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    padding-left: 20px;
-    font-size: 25px;
-  }
   @media (max-width: ${device.mobile}) {
-    padding-left: 10px;
-    font-size: 18px;
+    padding-left: 30px;
   }
-`;
+
+  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+    padding-left: 25px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
+    padding-left: 35px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+`
 export const WrapIcon = styled.div`
   border: 1px solid white;
   display: flex;
@@ -29,10 +35,7 @@ export const WrapIcon = styled.div`
   border-radius: 50%;
   padding: 20px;
   height: fit-content;
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
+  @media (max-width: ${device.desktop}) {
     padding: 10px;
   }
-  @media (max-width: ${device.mobile}) {
-    padding: 10px;
-  }
-`;
+`
