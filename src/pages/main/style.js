@@ -149,7 +149,7 @@ const imgsize = css`
     min-width: 150px;
     min-height: 320px;
   }
-  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+  @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
     max-width: 170px;
     max-height: 360px;
     min-width: 170px;
@@ -165,10 +165,10 @@ export const Img1 = styled.img`
   right: 35%;
   ${imgsize}
   
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
+  @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
     top: 0;
-    right: 15%;
-    transform: rotate(23deg);
+    right: 5%;
+    transform: rotate(13deg)
   }
   @media (max-width: ${device.mobile}) {
     left: 24%;
@@ -177,9 +177,9 @@ export const Img1 = styled.img`
 export const Img2 = styled.img`
   right: -5%;
   ${imgsize}
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    right: -40%;
-    transform: rotate(30deg);
+  @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
+    right: -60%;
+    transform: rotate(15deg);
   }
   @media (max-width: ${device.mobile}) {
     right: 24%;

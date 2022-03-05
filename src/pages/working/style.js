@@ -53,7 +53,7 @@ export const Wrapper = styled.div`
   width: 90%;
   display: grid;
   flex-grow: 1;
-  max-width: 1140px;
+  max-width: ${device.desktop};
   grid-gap: 72px 120px;
   padding: 50px;
   border-radius: 30px;

@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
   width: 90%;
-  max-width: 1140px;
+  max-width: ${device.desktop};
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;

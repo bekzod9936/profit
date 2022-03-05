@@ -1,23 +1,22 @@
-import styled from 'styled-components'
 import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: flex;
   width: 100%;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   background: radial-gradient(circle, black 0%, var(--blue) 250%);
 `
 
 export const Wrapper = styled.div`
   width: 90%;
-  flex-direction: column;
+  height: 200px;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  height: 200px;
-  max-width: 1140px;
-
+  max-width: ${device.desktop};
   @media (max-width: ${device.mobile}) {
     padding: 30px 0;
     height: fit-content;
