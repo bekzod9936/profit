@@ -4,20 +4,21 @@ import { motion } from 'framer-motion'
 
 export const StyleButton = styled(motion.button)`
   border-radius: 80px;
-  color: rgba(46, 46, 46, 1);
   height: 50px;
-  width: 210px;
   font-size: 16px;
+  width: 100%;
+
+  color: ${({ color }) => (color ? color : 'rgba(46, 46, 46, 1)')};
   @media (max-width: ${device.mobile}) {
     font-size: 21px;
-    height: 68px;
+    height: 80px;
     border-radius: 100px;
   }
   @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
     height: 30px;
-    width: 120px;
-    font-size: 10px;
-    border-radius: 50px;
+    font-size: 18.296px;
+    line-height: 27px;
+    border-radius: 80px;
   }
   @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
     height: 40px;

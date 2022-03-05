@@ -2,7 +2,7 @@ import Form from '../Form'
 import Texts from '../Texts'
 import { Container, WrapButton } from './style'
 import { useCallback, useState } from 'react'
-import Button from 'components/Button'
+import Button from '../Button'
 import { useConsult } from 'context/consult'
 import useWindowWidth from 'utils/hooks/useWindowWidth'
 import Success from '../Success'
@@ -43,11 +43,7 @@ const RightSide = () => {
         <Texts />
       )}
       <WrapButton>
-        <Button
-          color={successOpen && '#219653'}
-          onClick={handleClick}
-          width="100%"
-        >
+        <Button color={successOpen && '#219653'} onClick={handleClick}>
           {open ? 'Отправить' : 'Получить'}
         </Button>
       </WrapButton>

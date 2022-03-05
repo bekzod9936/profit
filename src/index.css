@@ -36,3 +36,16 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+button {
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  text-transform: capitalize;
+  font-family: 'GilroyBold' !important;
+  font-weight: 800;
+}
