@@ -4,37 +4,50 @@ import { ReactComponent as Arrow } from 'assets/icons/arrow.svg'
 
 export const Container = styled.div`
   width: 100vw;
-  height: fit-content;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: fit-content;
+  flex-direction: column;
+
   padding: 56px 0 71px;
+  @media (max-width: ${device.mobile}) {
+    padding: 10px 0 80px;
+  }
+  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+    padding: 40px 0 60px;
+  }
+  @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
+    padding: 70px 0 80px;
+  }
 `
 
 export const Wrapper = styled.div`
   width: 90%;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 95px;
-  margin-top: 58px;
   justify-content: center;
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    grid-gap: 25px;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: auto auto auto;
+
+  grid-gap: 55px 95px;
+  margin-top: 58px;
 
   @media (max-width: ${device.mobile}) {
     display: none;
+  }
+  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+    grid-gap: 30px 40px;
+    margin-top: 50px;
+  }
+  @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
+    grid-gap: 40px 50px;
+    margin-top: 30px;
   }
 `
 
 export const MobileWrap = styled.div`
   display: flex;
   width: 100%;
-  padding-top: 50px;
-
+  padding-top: 65px;
   @media (min-width: ${device.mobile}) {
     display: none;
   }

@@ -1,4 +1,4 @@
-import Box from './Box'
+import Box from './components/Box'
 import { boxes } from './constants'
 import Title from 'components/Title'
 import Carousel, { consts } from 'react-elastic-carousel'

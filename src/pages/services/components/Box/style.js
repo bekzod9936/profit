@@ -11,37 +11,51 @@ export const Container = styled(motion.div)`
   box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
     -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
   justify-content: space-between;
-  padding: 40px;
-  height: 240px;
   backdrop-filter: blur(120px);
   -webkit-backdrop-filter: blur(120px);
   background: rgba(255, 255, 255, 0.1);
-  max-width: 340px;
-  @media (max-width: ${device.mobile}) {
-    padding: 20px;
-  }
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    padding: 35px;
-  }
 
-  @media (min-width: ${device.planshet}) {
-    min-height: 240px;
-    min-width: 330px;
+  padding: 40px;
+  max-width: 340px;
+  max-height: 240px;
+  @media (max-width: ${device.mobile}) {
+    padding: 50px;
+    max-width: 440px;
+    max-height: 315px;
+  }
+  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+    padding: 20px;
+    max-width: 200px;
+    max-height: 140px;
+  }
+  @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
+    padding: 30px;
+    max-width: 260px;
+    max-height: 180px;
   }
 `
 
 export const Title = styled.div`
   color: white;
-  font-size: 35px;
-  margin-bottom: 30px;
   width: 100%;
   font-weight: 600;
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    font-size: 30px;
-  }
+
+  font-size: 35px;
+  margin-bottom: 30px;
+
   @media (max-width: ${device.mobile}) {
-    font-size: 25px;
-    width: 100%;
+    font-size: 45px;
+    line-height: 54px;
+    margin-bottom: 40px;
+  }
+  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
+    font-size: 26px;
+    line-height: 31px;
   }
 `
 
