@@ -1,17 +1,14 @@
-import { device } from 'utils/style';
-import styled from 'styled-components';
+import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   gap: 94px;
   width: 50%;
   display: flex;
-  flex-wrap: wrap;
-  white-space: nowrap;
-  justify-content: space-around;
-
   a {
     cursor: pointer;
     color: ${({ color }) => (color ? color : 'white')};
+    white-space: nowrap;
   }
 
   @media (max-width: ${device.mobile}) {
@@ -26,10 +23,10 @@ export const Container = styled.div`
     width: 60%;
     gap: 27px;
   }
-`;
+`
 
 export const linkVariants = {
   hover: {
     scale: 1.1,
   },
-};
+}

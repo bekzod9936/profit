@@ -16,6 +16,8 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   height: 200px;
+  max-width: 1140px;
+
   @media (max-width: ${device.mobile}) {
     padding: 30px 0;
     height: fit-content;

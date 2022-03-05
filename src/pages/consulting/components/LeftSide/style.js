@@ -1,5 +1,5 @@
-import { device } from 'utils/style';
-import styled from 'styled-components';
+import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ export const Container = styled.div`
     align-items: center;
     grid-gap: 30px;
   }
-`;
+`
 
 export const Title = styled.div`
   color: white;
@@ -32,7 +32,7 @@ export const Title = styled.div`
   @media (max-width: ${device.mobile}) {
     font-size: 30px;
   }
-`;
+`
 
 export const Text = styled.div`
   color: white;
@@ -44,4 +44,4 @@ export const Text = styled.div`
   @media (max-width: ${device.mobile}) {
     font-size: 20px;
   }
-`;
+`

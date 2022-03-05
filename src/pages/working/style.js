@@ -1,11 +1,11 @@
-import { device } from 'utils/style';
-import styled, { css } from 'styled-components';
-import { ReactComponent as Plus } from 'assets/icons/plus.svg';
-import { ReactComponent as LayOut } from 'assets/icons/layout.svg';
-import { ReactComponent as Launch } from 'assets/icons/launch.svg';
-import { ReactComponent as Analyze } from 'assets/icons/analyze.svg';
-import { ReactComponent as Product } from 'assets/icons/product.svg';
-import { ReactComponent as Structure } from 'assets/icons/structure.svg';
+import { device } from 'utils/style'
+import styled, { css } from 'styled-components'
+import { ReactComponent as Plus } from 'assets/icons/plus.svg'
+import { ReactComponent as LayOut } from 'assets/icons/layout.svg'
+import { ReactComponent as Launch } from 'assets/icons/launch.svg'
+import { ReactComponent as Analyze } from 'assets/icons/analyze.svg'
+import { ReactComponent as Product } from 'assets/icons/product.svg'
+import { ReactComponent as Structure } from 'assets/icons/structure.svg'
 
 const icon = css`
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
@@ -17,26 +17,26 @@ const icon = css`
     width: 25px;
     height: 25px;
   }
-`;
+`
 
 export const IconPlus = styled(Plus)`
   ${icon}
-`;
+`
 export const IconAnalyze = styled(Analyze)`
   ${icon}
-`;
+`
 export const IconStructure = styled(Structure)`
   ${icon}
-`;
+`
 export const IconProduct = styled(Product)`
   ${icon}
-`;
+`
 export const IconLayOut = styled(LayOut)`
   ${icon}
-`;
+`
 export const IconLaunch = styled(Launch)`
   ${icon}
-`;
+`
 
 export const Container = styled.div`
   width: 100vw;
@@ -47,12 +47,13 @@ export const Container = styled.div`
   @media (max-width: ${device.mobile}) {
     padding: 50px 0;
   }
-`;
+`
 
 export const Wrapper = styled.div`
   width: 90%;
   display: grid;
   flex-grow: 1;
+  max-width: 1140px;
   grid-gap: 72px 120px;
   padding: 50px;
   border-radius: 30px;
@@ -70,4 +71,4 @@ export const Wrapper = styled.div`
     grid-template-columns: 100%;
     padding: 15px;
   }
-`;
+`

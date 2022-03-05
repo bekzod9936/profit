@@ -1,5 +1,5 @@
-import { device } from 'utils/style';
-import styled from 'styled-components';
+import { device } from 'utils/style'
+import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100vw;
@@ -10,14 +10,13 @@ export const Container = styled.div`
   padding: 30px 0 70px;
   border-top: 1px dashed #e5e5e5;
   border-bottom: 1px dashed #e5e5e5;
-`;
+`
 export const Wrapper = styled.div`
   width: 90%;
   display: flex;
-  flex-grow: 1;
+  max-width: 1140px;
   border-radius: 30px;
   border: 1px solid white;
-  align-items: center;
   box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
     -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
@@ -26,4 +25,4 @@ export const Wrapper = styled.div`
   @media (max-width: ${device.mobile}) {
     flex-direction: column;
   }
-`;
+`

@@ -1,6 +1,6 @@
-import { device } from 'utils/style';
-import styled, { css } from 'styled-components';
-import { ReactComponent as Logo } from 'assets/icons/logo.svg';
+import { device } from 'utils/style'
+import styled, { css } from 'styled-components'
+import { ReactComponent as Logo } from 'assets/icons/logo.svg'
 
 export const Container = styled.div`
   width: 100vw;
@@ -24,17 +24,18 @@ export const Container = styled.div`
       var(--blue) 100%
     );
   }
-`;
+`
 
 export const WrapMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+
   @media (min-width: ${device.mobile}) {
     display: none;
   }
-`;
+`
 
 export const Wrapper = styled.div`
   width: 90%;
@@ -42,7 +43,8 @@ export const Wrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   display: flex;
-`;
+  max-width: 1140px;
+`
 
 export const IconLogo = styled(Logo)`
   position: absolute;
@@ -51,7 +53,7 @@ export const IconLogo = styled(Logo)`
   @media (max-width: ${device.mobile}) {
     left: auto;
   }
-`;
+`
 
 export const Title = styled.div`
   color: white;
@@ -68,7 +70,7 @@ export const Title = styled.div`
     font-size: 24px;
     margin-top: 30px;
   }
-`;
+`
 
 export const Text = styled.div`
   color: white;
@@ -85,7 +87,7 @@ export const Text = styled.div`
     width: 100%;
     font-size: 20px;
   }
-`;
+`
 
 export const Body = styled.div`
   flex-grow: 1;
@@ -94,7 +96,7 @@ export const Body = styled.div`
   @media (max-width: ${device.mobile}) {
     flex-direction: column;
   }
-`;
+`
 
 export const LeftSide = styled.div`
   display: flex;
@@ -108,7 +110,7 @@ export const LeftSide = styled.div`
     justify-content: flex-start;
     height: calc(100% - 70px);
   }
-`;
+`
 
 export const RightSide = styled.div`
   position: relative;
@@ -117,7 +119,7 @@ export const RightSide = styled.div`
   @media (max-width: ${device.mobile}) {
     display: none;
   }
-`;
+`
 
 export const Head = styled.div`
   width: 100%;
@@ -126,7 +128,7 @@ export const Head = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-`;
+`
 
 export const WrapNav = styled.div`
   width: 100%;
@@ -138,7 +140,7 @@ export const WrapNav = styled.div`
   @media (max-width: ${device.mobile}) {
     display: none;
   }
-`;
+`
 
 const imgsize = css`
   position: absolute;
@@ -154,7 +156,7 @@ const imgsize = css`
   }
   max-width: 230px;
   max-height: 500px;
-`;
+`
 
 export const Img1 = styled.img`
   right: 35%;
@@ -167,7 +169,7 @@ export const Img1 = styled.img`
   @media (max-width: ${device.mobile}) {
     left: 24%;
   }
-`;
+`
 export const Img2 = styled.img`
   right: 0;
   ${imgsize}
@@ -178,7 +180,7 @@ export const Img2 = styled.img`
   @media (max-width: ${device.mobile}) {
     right: 24%;
   }
-`;
+`
 
 export const WrapButton = styled.div`
   width: 100%;
@@ -187,7 +189,7 @@ export const WrapButton = styled.div`
     min-width: 226px;
     max-width: 226px;
   }
-`;
+`
 export const MobileImages = styled.div`
   color: white;
   display: flex;
@@ -198,8 +200,8 @@ export const MobileImages = styled.div`
   @media (min-width: ${device.mobile}) {
     display: none;
   }
-`;
+`
 
 export const WrapTexts = styled.div`
   margin-top: 30px;
-`;
+`
