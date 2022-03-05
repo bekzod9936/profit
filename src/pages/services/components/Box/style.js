@@ -11,10 +11,12 @@ export const Container = styled(motion.div)`
   box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
     -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
   justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) -1.52%,
+    rgba(255, 255, 255, 0.024) 104.35%
+  );
   backdrop-filter: blur(120px);
-  -webkit-backdrop-filter: blur(120px);
-  background: rgba(255, 255, 255, 0.1);
-
   padding: 40px;
   max-width: 340px;
   max-height: 240px;

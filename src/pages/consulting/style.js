@@ -18,10 +18,12 @@ export const Wrapper = styled.div`
   border: 2px solid #686292;
   backdrop-filter: blur(120px);
   grid-template-columns: 1fr 1fr;
-  -webkit-backdrop-filter: blur(120px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
-    -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) -1.79%,
+    rgba(255, 255, 255, 0.024) 123.08%
+  );
+  backdrop-filter: blur(120px);
   max-width: 1230px;
   @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
     flex-direction: column;

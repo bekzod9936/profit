@@ -24,10 +24,12 @@ export const Wrapper = styled.div`
   border: 2px solid #57576b;
   backdrop-filter: blur(120px);
   grid-template-columns: 1fr 1fr;
-  -webkit-backdrop-filter: blur(120px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
-    -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) -1.52%,
+    rgba(255, 255, 255, 0.024) 104.35%
+  );
+  backdrop-filter: blur(120px);
   border-radius: 30px;
 
   grid-gap: 72px 120px;
