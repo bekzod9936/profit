@@ -28,7 +28,7 @@ const Form = () => {
         )}
       />
       <Controller
-        name="text"
+        name="message"
         control={control}
         render={({ field }) => (
           <Input placeholder="какая из услуг вас заинтересовала ?" {...field} />

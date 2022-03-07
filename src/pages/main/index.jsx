@@ -1,8 +1,8 @@
-import MobileMenu from './MobileMenu';
-import Button from 'components/Button';
-import NavBar from 'components/NavBar';
-import phone1 from 'assets/images/phone1.png';
-import phone2 from 'assets/images/phone2.png';
+import MobileMenu from './MobileMenu'
+import Button from 'components/Button'
+import NavBar from 'components/NavBar'
+import phone1 from 'assets/images/phone1.png'
+import phone2 from 'assets/images/phone2.png'
 import {
   Container,
   Wrapper,
@@ -20,11 +20,11 @@ import {
   WrapButton,
   MobileImages,
   WrapTexts,
-} from './style';
-import useWindowWidth from 'utils/hooks/useWindowWidth';
+} from './style'
+import useWindowWidth from 'utils/hooks/useWindowWidth'
 
 const Header = () => {
-  const { width } = useWindowWidth();
+  const { width } = useWindowWidth()
 
   return (
     <Container>
@@ -57,7 +57,7 @@ const Header = () => {
               <Img1 src={phone1} alt="phone1" />
             </MobileImages>
             <WrapButton>
-              <Button width="100%">Обсудить проект</Button>
+              <Button>Обсудить проект</Button>
             </WrapButton>
           </LeftSide>
           <RightSide data-aos="fade-left" data-aos-duration="2500">
@@ -67,7 +67,7 @@ const Header = () => {
         </Body>
       </Wrapper>
     </Container>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

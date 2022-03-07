@@ -22,12 +22,13 @@ const useRightSide = () => {
     defaultValues: {
       username: '',
       phone: '',
-      text: '',
+      message: '',
     },
   })
 
   const onSubmit = async (data) => {
-    const text = `UserName: ${data.username}\n  Phone: ${data.phone} \n Message: ${data.text}`
+    const { username, phone, message } = data
+    const text = `UserName: ${username} \n Phone: ${phone} \n Message: ${message}`
     try {
       const res = await fetch(
         `https://api.telegram.org/bot${process.env.REACT_APP_API_TOKEN}/sendMessage?chat_id=${process.env.REACT_APP_API_CHAT_ID}&text=${text}`,
