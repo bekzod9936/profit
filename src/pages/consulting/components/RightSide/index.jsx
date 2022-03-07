@@ -1,34 +1,18 @@
-import Form from '../Form';
-import Texts from '../Texts';
-import { Container, WrapButton } from './style';
-import { useCallback, useState } from 'react';
-import Button from '../Button';
-import { useConsult } from 'context/consult';
-import useWindowWidth from 'utils/hooks/useWindowWidth';
-import Success from '../Success';
-import { FormProvider } from 'react-hook-form';
-import useRightSide from './useRightSide';
+import Form from '../Form'
+import Texts from '../Texts'
+import { Container, WrapButton } from './style'
+import Button from '../Button'
+import useWindowWidth from 'utils/hooks/useWindowWidth'
+import Success from '../Success'
+import { FormProvider } from 'react-hook-form'
+import useRightSide from './useRightSide'
 
 const RightSide = () => {
-  const [open, setOpen] = useConsult();
-  const [successOpen, setSuccessOpen] = useState(false);
+  const { methods, onSubmit, handleClick, successOpen, open } = useRightSide()
 
-  const { methods, onSubmit } = useRightSide();
+  const { handleSubmit } = methods
 
-  const {
-    watch,
-    handleSubmit,
-    formState: { errors },
-  } = methods;
-
-  const handleClick = useCallback(() => {
-    setOpen(true);
-    if (open) {
-      setSuccessOpen(true);
-    }
-  }, [setOpen, open]);
-
-  const { width } = useWindowWidth();
+  const { width } = useWindowWidth()
 
   return (
     <FormProvider {...methods}>
@@ -57,14 +41,14 @@ const RightSide = () => {
           <Button
             type={open ? 'submit' : 'button'}
             color={successOpen && '#219653'}
-            onClick={handleClick}
+            onClick={open ? null : handleClick}
           >
             {open ? 'Отправить' : 'Получить'}
           </Button>
         </WrapButton>
       </Container>
     </FormProvider>
-  );
-};
+  )
+}
 
-export default RightSide;
+export default RightSide
