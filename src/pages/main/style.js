@@ -161,24 +161,17 @@ export const Img1 = styled.img`
   right: 35%;
   ${imgsize}
 
-  @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
-    top: 0;
-    right: 5%;
-    transform: rotate(13deg);
-  }
+
   @media (max-width: ${device.mobile}) {
-    left: 24%;
+    left: 18%;
   }
 `
 export const Img2 = styled.img`
-  right: -5%;
+  right: 0;
   ${imgsize}
-  @media (min-width: ${device.mobile}) and (max-width: ${device.laptop}) {
-    right: -60%;
-    transform: rotate(15deg);
-  }
+
   @media (max-width: ${device.mobile}) {
-    right: 24%;
+    right: 18%;
   }
 `
 
@@ -193,10 +186,10 @@ export const WrapButton = styled.div`
 export const MobileImages = styled.div`
   color: white;
   display: flex;
-  flex-grow: 1;
   position: relative;
   align-items: center;
   justify-content: center;
+  height: 350px;
   @media (min-width: ${device.mobile}) {
     display: none;
   }
