@@ -1,5 +1,5 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
+import { device } from 'utils/style';
+import styled from 'styled-components';
 
 export const StyleInput = styled.input`
   outline: none;
@@ -13,6 +13,15 @@ export const StyleInput = styled.input`
     text-transform: uppercase;
   }
   @media (max-width: ${device.mobile}) {
-    height: ${({ height }) => (height ? height : '60px')};
+    height: 80px;
+    border-radius: 90px;
   }
-`
+  @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
+    height: 40px;
+    border-radius: 45px;
+  }
+  @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
+    height: 55px;
+    border-radius: 80px;
+  }
+`;

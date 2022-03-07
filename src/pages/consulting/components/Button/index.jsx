@@ -1,16 +1,17 @@
-import { StyleButton, buttonVariants } from './style'
+import { StyleButton, buttonVariants } from './style';
 
-const Button = ({ children, onClick, color }) => {
+const Button = ({ children, onClick, color, type }) => {
   return (
     <StyleButton
       color={color}
       onClick={onClick}
       variants={buttonVariants}
       whileHover="hover"
+      type={type}
     >
       {children}
     </StyleButton>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

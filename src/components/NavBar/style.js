@@ -1,5 +1,5 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
+import { device } from 'utils/style';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   gap: 90px;
@@ -17,9 +17,11 @@ export const Container = styled.div`
   @media (max-width: ${device.mobile}) {
     width: 100%;
     flex-direction: column;
+    gap: 0;
+
     align-items: ${({ color }) => (color ? 'flex-end' : 'center')};
     a {
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
   }
   @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
@@ -28,10 +30,10 @@ export const Container = styled.div`
   @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
     gap: 70px;
   }
-`
+`;
 
 export const linkVariants = {
   hover: {
     scale: 1.1,
   },
-}
+};

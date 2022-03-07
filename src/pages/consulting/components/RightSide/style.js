@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { device } from 'utils/style'
+import styled from 'styled-components';
+import { device } from 'utils/style';
 
-export const Container = styled.div`
+export const Container = styled.form`
   width: 30%;
   padding: 30px;
   display: flex;
@@ -12,18 +12,18 @@ export const Container = styled.div`
   border-radius: inherit;
   border: 2px solid #565656;
   min-width: 400px;
-  @media (min-width: ${device.mobile}) and (max-width: ${device.desktop}) {
-    width: 100%;
-  }
+
   @media (max-width: ${device.mobile}) {
     padding: 20px;
     width: 100%;
     grid-gap: 20px;
     height: 100%;
     flex-grow: 1;
+    min-height: ${({ height }) => height && '990px'};
+    max-height: ${({ height }) => height && '990px'};
   }
-`
+`;
 
 export const WrapButton = styled.div`
   margin-top: 50px;
-`
+`;
