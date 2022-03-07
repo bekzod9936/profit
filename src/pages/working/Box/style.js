@@ -12,6 +12,7 @@ export const Title = styled.div`
   padding-left: 45px;
   line-height: 40px;
   font-weight: 600;
+  word-break: break-word;
   @media (max-width: ${device.mobile}) {
     padding-left: 30px;
   }

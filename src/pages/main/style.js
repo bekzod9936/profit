@@ -168,7 +168,7 @@ export const Img1 = styled.img`
 
 
   @media (max-width: ${device.mobile}) {
-    left: 18%;
+    left: 10%;
   }
 `
 export const Img2 = styled.img`
@@ -176,7 +176,7 @@ export const Img2 = styled.img`
   ${imgsize}
 
   @media (max-width: ${device.mobile}) {
-    right: 18%;
+    right: 10%;
   }
 `
 

@@ -12,6 +12,8 @@ export const StyleButton = styled(motion.button)`
     font-size: 21px;
     height: 68px;
     border-radius: 100px;
+    width: fit-content;
+    padding: 0 20px;
   }
   @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
     height: 30px;

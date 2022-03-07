@@ -21,7 +21,7 @@ export const Container = styled(motion.div)`
   max-width: 340px;
   max-height: 240px;
   @media (max-width: ${device.mobile}) {
-    padding: 50px;
+    padding: 20px;
     max-width: 440px;
     max-height: 315px;
   }
@@ -46,7 +46,7 @@ export const Title = styled.div`
   margin-bottom: 30px;
 
   @media (max-width: ${device.mobile}) {
-    font-size: 45px;
+    font-size: 30px;
     line-height: 54px;
     margin-bottom: 40px;
   }
