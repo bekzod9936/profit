@@ -1,7 +1,13 @@
-import { Container, containerVariants } from './style'
 import Input from 'components/Input'
+import { Container, containerVariants } from './style'
+import { useFormContext, Controller } from 'react-hook-form'
 
 const Form = () => {
+  const {
+    control,
+    formState: { errors },
+  } = useFormContext()
+
   return (
     <Container
       variants={containerVariants}
@@ -9,9 +15,25 @@ const Form = () => {
       animate="visible"
       exit="hidden"
     >
-      <Input placeholder="Ваше имя" />
-      <Input placeholder="номер телефона" />
-      <Input placeholder="какая из услуг вас заинтересовала ?" />
+      <Controller
+        name="username"
+        control={control}
+        render={({ field }) => <Input placeholder="Ваше имя" {...field} />}
+      />
+      <Controller
+        name="phone"
+        control={control}
+        render={({ field }) => (
+          <Input placeholder="номер телефона" {...field} />
+        )}
+      />
+      <Controller
+        name="text"
+        control={control}
+        render={({ field }) => (
+          <Input placeholder="какая из услуг вас заинтересовала ?" {...field} />
+        )}
+      />
     </Container>
   )
 }
