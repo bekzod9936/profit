@@ -17,11 +17,12 @@ export const IconPhone = styled(Phone)`
   height: 40px;
 `
 
-export const WrapPhone = styled.div`
+export const WrapPhone = styled.a`
   width: fit-content;
   height: fit-content;
-  border: 1px solid;
+  border: 1px solid black;
   border-radius: 10px;
+  color: black;
   padding: 0 10px;
   position: relative;
   & > p {

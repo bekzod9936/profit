@@ -18,7 +18,7 @@ const Menu = () => {
         <Content>
           <IconMenu onClick={handleClick} color="black" />
           <NavBar color="black" />
-          <WrapPhone>
+          <WrapPhone href={`tel:${process.env.REACT_APP_API_CALL_CENTER}`}>
             <IconPhone />
             <p>Позвонить</p>
           </WrapPhone>

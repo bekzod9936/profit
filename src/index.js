@@ -4,9 +4,9 @@ import 'aos/dist/aos.css'
 import Context from 'context'
 import { StrictMode } from 'react'
 import { render } from 'react-dom'
-import reportWebVitals from './reportWebVitals'
 import 'utils/fonts/GilroyBold.otf'
 import 'utils/fonts/GilroyLight.otf'
+import reportWebVitals from './reportWebVitals'
 
 render(
   <StrictMode>
