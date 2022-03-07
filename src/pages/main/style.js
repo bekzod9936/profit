@@ -64,9 +64,13 @@ export const Title = styled.div`
   white-space: nowrap;
   word-break: break-word;
   font-family: 'GilroyBold' !important;
+  font-weight: 800;
   @media (max-width: ${device.laptop}) {
     font-size: 40px;
     line-height: 45px;
+  }
+  @media (max-width: ${device.mobile}) {
+    white-space: unset;
   }
 `
 
@@ -84,6 +88,7 @@ export const Text = styled.div`
   @media (max-width: ${device.mobile}) {
     width: 100%;
     font-size: 20px;
+    white-space: unset;
   }
 `
 
@@ -190,6 +195,7 @@ export const MobileImages = styled.div`
   align-items: center;
   justify-content: center;
   height: 350px;
+  padding-top: 30px;
   @media (min-width: ${device.mobile}) {
     display: none;
   }
