@@ -54,7 +54,6 @@ const useRightSide = () => {
         .then((res) => res.find(({ message }) => message?.text === `/start`))
         .then((res) => {
           setChatId(res.message.from.id)
-          console.log(res.message.from.id)
         })
     } catch (error) {
       console.log(error)
