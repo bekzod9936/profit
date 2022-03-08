@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { device } from 'utils/style';
 
 export const Container = styled.form`
-  width: 30%;
+  width: 35%;
   padding: 30px;
   display: flex;
   flex: 1;
