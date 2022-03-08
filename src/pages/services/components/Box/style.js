@@ -11,6 +11,7 @@ export const Container = styled(motion.div)`
   justify-content: space-between;
   background-position: 100% 100%;
   background-repeat: no-repeat;
+  background-size: 340px 240px;
   padding: 40px;
   max-width: 340px;
   max-height: 240px;
@@ -20,18 +21,21 @@ export const Container = styled(motion.div)`
     max-width: 440px;
     max-height: 315px;
     min-height: 315px;
+    background-size: 440px 315px;
   }
   @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
     padding: 20px;
     max-width: 200px;
     max-height: 140px;
     min-height: 140px;
+    background-size: 200px 140px;
   }
   @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
     padding: 30px;
     max-width: 260px;
     max-height: 180px;
     min-height: 180px;
+    background-size: 260px 180px;
   }
 `;
 
