@@ -1,6 +1,6 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import { device } from 'utils/style';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
   width: 100%;
@@ -24,6 +24,7 @@ export const Container = styled(motion.div)`
     padding: 20px;
     max-width: 440px;
     max-height: 315px;
+    min-height: 315px;
   }
   @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
     padding: 20px;
@@ -35,7 +36,7 @@ export const Container = styled(motion.div)`
     max-width: 260px;
     max-height: 180px;
   }
-`
+`;
 
 export const Title = styled.div`
   color: white;
@@ -46,7 +47,7 @@ export const Title = styled.div`
   margin-bottom: 30px;
 
   @media (max-width: ${device.mobile}) {
-    font-size: 30px;
+    font-size: 33px;
     line-height: 54px;
     margin-bottom: 40px;
   }
@@ -59,10 +60,10 @@ export const Title = styled.div`
     font-size: 26px;
     line-height: 31px;
   }
-`
+`;
 
 export const containerVariants = {
   hover: {
     scale: 1.05,
   },
-}
+};
