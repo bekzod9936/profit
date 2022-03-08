@@ -11,7 +11,6 @@ export const Container = styled(motion.div)`
   justify-content: space-between;
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   padding: 40px;
   max-width: 340px;
   max-height: 240px;
