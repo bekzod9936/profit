@@ -1,22 +1,17 @@
 import { device } from 'utils/style';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
+import cont from 'assets/icons/cont.svg';
 
 export const Container = styled(motion.div)`
   width: 100%;
-  border-bottom-right-radius: 30% 40%;
-  border: 1px solid #61656b;
   display: flex;
   flex-direction: column;
-  box-shadow: 6px 6px 14px 0 rgba(255, 255, 255, 0.1),
-    -6px -6px 14px 0 rgba(255, 255, 255, 0.1);
+  background-image: url(${() => cont});
   justify-content: space-between;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.1) -1.52%,
-    rgba(255, 255, 255, 0.024) 104.35%
-  );
-  backdrop-filter: blur(120px);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   padding: 40px;
   max-width: 340px;
   max-height: 240px;

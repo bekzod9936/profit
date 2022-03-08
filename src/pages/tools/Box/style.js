@@ -1,6 +1,6 @@
-import { device } from 'utils/style'
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import { device } from 'utils/style';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Container = styled(motion.div)`
   border: 2px solid #6e59b6;
@@ -9,7 +9,6 @@ export const Container = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 6px 6px 14px 0 rgba(0, 0, 0, 0.1), -3px -3px 18px 0 black;
   background: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.1) -1.79%,
@@ -29,7 +28,7 @@ export const Container = styled(motion.div)`
     border-radius: 25px;
     backdrop-filter: blur(96.4509px);
   }
-`
+`;
 
 export const Title = styled.div`
   color: white;
@@ -49,7 +48,7 @@ export const Title = styled.div`
     font-size: 20.0939px;
     line-height: 22px;
   }
-`
+`;
 export const Img = styled.img`
   position: absolute;
   left: 0;
@@ -72,9 +71,9 @@ export const Img = styled.img`
     height: 40px;
     top: -10px;
   }
-`
+`;
 export const containerVariants = {
   hover: {
     scale: 1.05,
   },
-}
+};
