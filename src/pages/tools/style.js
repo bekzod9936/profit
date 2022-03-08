@@ -1,5 +1,5 @@
-import { device } from 'utils/style'
-import styled, { css } from 'styled-components'
+import { device } from 'utils/style';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   width: 100vw;
@@ -18,7 +18,7 @@ export const Container = styled.div`
   @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
     margin: 40px 0 20px;
   }
-`
+`;
 
 const common = css`
   color: white;
@@ -40,7 +40,7 @@ const common = css`
     font-size: 40px;
     line-height: 60px;
   }
-`
+`;
 
 export const Title1 = styled.div`
   background-color: black;
@@ -51,10 +51,10 @@ export const Title1 = styled.div`
   @media (max-width: ${device.mobile}) {
     width: 90%;
   }
-`
+`;
 export const Title2 = styled.div`
   ${common}
-`
+`;
 
 export const Wrapper = styled.div`
   width: 90%;
@@ -62,21 +62,21 @@ export const Wrapper = styled.div`
   grid-gap: 50px 35px;
   padding-top: 64px;
   justify-content: center;
-  grid-template-columns: repeat(3, minmax(auto, 300px));
-  grid-template-rows: repeat(2, minmax(auto, 163px));
+  grid-template-columns: repeat(3, minmax(300px, 300px));
+  grid-template-rows: repeat(2, minmax(163px, 163px));
   @media (max-width: ${device.mobile}) {
-    grid-template-columns: minmax(auto, 420px);
-    grid-template-rows: repeat(6, minmax(auto, 230px));
+    grid-template-columns: minmax(420px, 420px);
+    grid-template-rows: repeat(6, minmax(230px, 230px));
     grid-gap: 100px 0;
   }
   @media (min-width: ${device.mobile}) and (max-width: ${device.planshet}) {
-    grid-template-columns: repeat(3, minmax(auto, 200px));
-    grid-template-rows: repeat(2, minmax(auto, 110px));
+    grid-template-columns: repeat(3, minmax(200px, 200px));
+    grid-template-rows: repeat(2, minmax(110px, 110px));
     grid-gap: 30px 25px;
   }
   @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
-    grid-template-columns: repeat(3, minmax(auto, 240px));
-    grid-template-rows: repeat(2, minmax(auto, 130px));
+    grid-template-columns: repeat(3, minmax(240px, 240px));
+    grid-template-rows: repeat(2, minmax(130px, 130px));
     grid-gap: 35px 30px;
   }
-`
+`;

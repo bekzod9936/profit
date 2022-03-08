@@ -20,6 +20,7 @@ export const Container = styled(motion.div)`
   padding: 40px;
   max-width: 340px;
   max-height: 240px;
+  min-height: 240px;
   @media (max-width: ${device.mobile}) {
     padding: 20px;
     max-width: 440px;
@@ -30,11 +31,13 @@ export const Container = styled(motion.div)`
     padding: 20px;
     max-width: 200px;
     max-height: 140px;
+    min-height: 140px;
   }
   @media (min-width: ${device.planshet}) and (max-width: ${device.laptop}) {
     padding: 30px;
     max-width: 260px;
     max-height: 180px;
+    min-height: 180px;
   }
 `;
 
